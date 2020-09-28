@@ -154,12 +154,12 @@ def start_date(start):
     """Return a JSON list of the minimum temperature, the average temperature, 
     and the max temperature for a given start range."""
 
-    print("Printing data since...")
+    print("Receiving request for start_date page... Printing data since...")
 
     # Create session link from Python to DB
     session = Session(engine)
 
-    # Query
+    # Query - calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
     range_start = session.query(Measurement.date, func.min(Measurement.tobs), \
                 func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
                 filter(Measurement.date >= start).all()
@@ -183,12 +183,12 @@ def start_end_date(start, end):
     """Return a JSON list of the minimum temperature, the average temperature, 
     and the max temperature for a given start-end range."""
 
-    print("Printing data from ... to ...")
+    print("Receiving request for start_end_date page... Printing data from ... to ...")
 
     # Create session link from Python to DB
     session = Session(engine)
 
-    # Query
+    # Query - calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
     range_start_end = session.query(Measurement.date, func.min(Measurement.tobs), \
                 func.avg(Measurement.tobs), func.max(Measurement.tobs)).filter(Measurement.date >= start).\
                 filter(Measurement.date <= end).all()
