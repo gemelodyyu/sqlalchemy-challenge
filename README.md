@@ -34,7 +34,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 * Use Pandas to print the summary statistics for the precipitation data.
 
 
-<img width="152" alt="Screen Shot 2020-09-29 at 23 48 09" src="https://user-images.githubusercontent.com/55970064/94644187-3ca5dc80-02ae-11eb-8712-9ecd0e11a03f.png">
+ <img width="152" alt="Screen Shot 2020-09-29 at 23 48 09" src="https://user-images.githubusercontent.com/55970064/94644187-3ca5dc80-02ae-11eb-8712-9ecd0e11a03f.png">
 
 
 ### Station Analysis
