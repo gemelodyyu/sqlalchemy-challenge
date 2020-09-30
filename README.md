@@ -59,7 +59,7 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
  * Filter by the station with the highest number of observations.
 
 
- * Plot the results as a histogram with bins=12.
+ * Plot the results as a histogram with `bins=12`.
  
  
  ![tobs](https://user-images.githubusercontent.com/55970064/94644464-fdc45680-02ae-11eb-9b01-fd6f7fa3f480.png)
@@ -77,7 +77,7 @@ Now that you have completed your initial analysis, design a Flask API based on t
 ### Routes
 
 
-* /
+* `/`
 
 
   * Home page.
@@ -88,10 +88,10 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
 
 
-* /api/v1.0/precipitation
+* `/api/v1.0/precipitation`
 
 
-  * Convert the query results to a dictionary using date as the key and prcp as the value.
+  * Convert the query results to a dictionary using `date` as the key and `prcp` as the value.
 
 
   * Return the JSON representation of your dictionary.
@@ -99,13 +99,13 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
 
 
-* /api/v1.0/stations
+* `/api/v1.0/stations`
 
   * Return a JSON list of stations from the dataset.
 
 
 
-* /api/v1.0/tobs
+* `/api/v1.0/tobs`
 
 
   * Query the dates and temperature observations of the most active station for the last year of data.
@@ -116,25 +116,23 @@ Now that you have completed your initial analysis, design a Flask API based on t
 
 
 
-* /api/v1.0/<start> and /api/v1.0/<start>/<end>
+* `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
 
 
   * Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 
 
-  * When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
+==========
 
-
-  * When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
 
 ### Trip Temperature Analysis 
 
 
-* The starter notebook contains a function called calc_temps that will accept a start date and end date in the format %Y-%m-%d. The function will return the minimum, average, and maximum temperatures for that range of dates.
+* The starter notebook contains a function called `calc_temps` that will accept a start date and end date in the format `%Y-%m-%d`. The function will return the minimum, average, and maximum temperatures for that range of dates.
 
 
-* Use the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year.
+* Use the `calc_temps` function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year.
 
 
 * Plot the min, avg, and max temperature from your previous query as a bar chart.
