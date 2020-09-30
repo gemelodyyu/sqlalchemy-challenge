@@ -53,16 +53,18 @@ To begin, use Python and SQLAlchemy to do basic climate analysis and data explor
 
 
 
+* Design a query to retrieve the last 12 months of temperature observation data (TOBS).
 
 
-
-Design a query to retrieve the last 12 months of temperature observation data (TOBS).
-
-
-Filter by the station with the highest number of observations.
+ * Filter by the station with the highest number of observations.
 
 
-Plot the results as a histogram with bins=12.
+ * Plot the results as a histogram with bins=12.
+ 
+ 
+ ![tobs](https://user-images.githubusercontent.com/55970064/94644464-fdc45680-02ae-11eb-9b01-fd6f7fa3f480.png)
+
+
 
 ## Step 2 - Climate App
 
@@ -70,13 +72,8 @@ Plot the results as a histogram with bins=12.
 ### Routes
 
 
-## Bonus: Other Recommended Analyses
 
-
-### Temperature Analysis I
-
-
-### Temperature Analysis II
+### Trip Temperature Analysis II
 
 
 ### Daily Rainfall Average
