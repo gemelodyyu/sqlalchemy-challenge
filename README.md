@@ -134,7 +134,7 @@ Now that you have completed your initial analysis, design a Flask API based on t
 * The starter notebook contains a function called calc_temps that will accept a start date and end date in the format %Y-%m-%d. The function will return the minimum, average, and maximum temperatures for that range of dates.
 
 
-* Use the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year (i.e., use "2017-01-01" if your trip start date was "2018-01-01").
+* Use the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year.
 
 
 * Plot the min, avg, and max temperature from your previous query as a bar chart.
