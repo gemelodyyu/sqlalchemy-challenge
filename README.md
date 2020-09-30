@@ -146,3 +146,6 @@ Now that you have completed your initial analysis, design a Flask API based on t
   * Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR).
 
 
+![avg_temp](https://user-images.githubusercontent.com/55970064/94645007-59dbaa80-02b0-11eb-9600-58fc5b48d3fd.png)
+
+
